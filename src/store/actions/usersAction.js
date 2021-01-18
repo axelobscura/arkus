@@ -4,10 +4,10 @@ import axios from 'axios'
 export const getUsers = () => async dispatch => {
     
     try{
-        const res = await axios.get(`http://jsonplaceholder.typicode.com/users`)
+        const res = await axios.get(`https://reqres.in/api/users`)
         dispatch( {
             type: GET_USERS,
-            payload: res.data
+            payload: res.data.data
         })
     }
     catch(e){
