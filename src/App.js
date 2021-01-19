@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Users from './components/users'
 
 function App() {
@@ -6,7 +6,6 @@ function App() {
     <div className="App">
          <h1>ARKUS APP</h1>
          <Users/>
-   
     </div>
   );
 }
